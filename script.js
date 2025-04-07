@@ -18,26 +18,26 @@ async function checkWeather(city) {
         // Update image based on weather condition
         switch (data.weather[0].main) {
             case "Clouds":
-                imageIcon.src = "images/clouds.png";
+                imageIcon.src = "Images/clouds.png";
                 break;
             case "Clear":
-                imageIcon.src = "images/clear.png";
+                imageIcon.src = "Images/clear.png";
                 break;
             case "Rain":
-                imageIcon.src = "images/rain.png";
+                imageIcon.src = "Images/rain.png";
                 break;
             case "Drizzle":
-                imageIcon.src = "images/drizzle.png";
+                imageIcon.src = "Images/drizzle.png";
                 break;
             case "Mist":
-                imageIcon.src = "images/mist.png";
+                imageIcon.src = "Images/mist.png";
                 break;
             case "Snow":
-                imageIcon.src = "images/snow.png";
+                imageIcon.src = "Images/snow.png";
                 break;
             default:
                 // Set a default image if the weather condition is not recognized
-                imageIcon.src = "images/clear.png";
+                imageIcon.src = "Images/clear.png";
         }
     } catch (error) {
         console.log("Error fetching weather data: ", error);
